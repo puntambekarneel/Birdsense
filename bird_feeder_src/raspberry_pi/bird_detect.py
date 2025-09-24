@@ -10,7 +10,7 @@ from picamera.array import PiRGBArray
 import google.generativeai as genai
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyDc_SRpuZEaKx0j2bk77rRIyV_0cpbGYdE")
+genai.configure(api_key="YOUR GEMINI API KEY")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Create necessary directories
@@ -131,3 +131,4 @@ while True:
         os.remove(image_path)
 
     time.sleep(MOTION_INTERVAL)
+
