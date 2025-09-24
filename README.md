@@ -1,7 +1,6 @@
 # Birdsense
 Birdsense is a smart bird feeder system that uses AI to detect and identify birds, capture images and videos, and display data in a mobile app. It offers real-time alerts, bird stats, and a gamified UI, making birdwatching interactive, educational, and fun. 
 ![Smartbirdfeeder_project 3_page-0001](https://github.com/user-attachments/assets/cb8abe03-32ad-4054-ad21-9a71e96e22de)
-![Smartbirdfeeder_project 3_page-0002](https://github.com/user-attachments/assets/eb717822-683c-4fee-a8fe-b3e0f131f29c)
 ![Smartbirdfeeder_project 3_page-0003](https://github.com/user-attachments/assets/643c5301-8700-4e89-a0e1-998284d9cd85)
 ![Smartbirdfeeder_project 3_page-0004](https://github.com/user-attachments/assets/70768ad5-e9a7-4338-a6d9-5d81d7bad620)
 ![Smartbirdfeeder_project 3_page-0005](https://github.com/user-attachments/assets/e9e49101-86a7-4759-8e2c-2b535627ba31)
