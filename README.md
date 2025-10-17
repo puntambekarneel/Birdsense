@@ -1,11 +1,78 @@
-# Birdsense
-Birdsense is a smart bird feeder system that uses AI to detect and identify birds, capture images and videos, and display data in a mobile app. It offers real-time alerts, bird stats, and a gamified UI, making birdwatching interactive, educational, and fun. 
-![Smartbirdfeeder_project 3_page-0001](https://github.com/user-attachments/assets/cb8abe03-32ad-4054-ad21-9a71e96e22de)
-![Smartbirdfeeder_project 3_page-0003](https://github.com/user-attachments/assets/643c5301-8700-4e89-a0e1-998284d9cd85)
-![Smartbirdfeeder_project 3_page-0004](https://github.com/user-attachments/assets/70768ad5-e9a7-4338-a6d9-5d81d7bad620)
-![Smartbirdfeeder_project 3_page-0005](https://github.com/user-attachments/assets/e9e49101-86a7-4759-8e2c-2b535627ba31)
-![Smartbirdfeeder_project 3_page-0006](https://github.com/user-attachments/assets/73e01249-f73a-4277-9f34-b3ca0b8e8202)
-![Smartbirdfeeder_project 3_page-0007](https://github.com/user-attachments/assets/f8023d94-6528-42f6-92e5-80694958790e)
-![Smartbirdfeeder_project 3_page-0008](https://github.com/user-attachments/assets/780ee095-a2f6-4fa2-845e-ee0a1dc9ad68)
-![Smartbirdfeeder_project 3_page-0009](https://github.com/user-attachments/assets/c3440c8b-a0d7-47ff-b0df-e3cff1fa782a)
-![Smartbirdfeeder_project 3_page-0010](https://github.com/user-attachments/assets/01f92a84-87ea-4e9e-be6b-0f073f004c60)
+# 🐦 BirdSense – The Smart AI Bird Feeder
+
+**BirdSense** is a smart bird feeder that automatically captures images and short videos of birds, identifies their species using **Google Gemini AI**, and shows all the details beautifully on a **Flask web dashboard**.  
+It helps people enjoy birdwatching effortlessl.
+
+---
+
+## 🌱 Why I Made It
+When I visited a relative’s farmhouse, I saw many birds but whenever I got close, they flew away.  
+I realized I didn’t have time to sit for hours just to watch birds.  
+That’s when I thought *why not make something that takes photos for me and reminds me when birds visit my garden?*  
+That idea became **BirdSense**.
+
+---
+
+## ⚙️ What It Does
+- Detects when a bird appears and captures **photos + 10-second videos**  
+- Uses **Gemini AI** to identify the bird species  
+- Saves details like name, habitat, and diet  
+- Displays everything neatly on a **Flask dashboard**  
+- Allows deleting blurred or common photos directly from the UI  
+- Works on any device connected to the same Wi-Fi network  
+
+---
+
+## 🧰 Hardware & Software
+**Recommended Setup**
+- Raspberry Pi Zero 2 W (or any Pi with camera support)  
+- Pi Camera Module / USB Webcam  
+- Raspberry Pi OS Legacy (32-bit)  
+- 16 GB+ microSD card  
+- Wi-Fi connection  
+- Power supply 5 V 2 A  
+
+**Install Dependencies**
+```bash
+sudo apt update
+sudo apt install python3-pip python3-opencv python3-picamera ffmpeg -y
+pip3 install flask google-generativeai
+
+🚀 Run It
+Clone repo
+
+Edit bird_detect.py:
+
+
+genai.configure(api_key="YOUR_API_KEY_HERE")
+🧠 How It Works
+The camera keeps watching for movement.
+
+When a bird appears, it captures an image and short video.
+
+Gemini AI confirms it’s a bird and identifies it.
+
+Bird info, photo, and video are saved to JSON and shown on the dashboard.
+
+
+bash
+Copy code
+https://github.com/puntambekarneel/Birdsense.git
+
+run app.py and bird_detect.py
+
+Open your browser at:
+http://<raspberry-pi-ip>:5000
+
+
+🌍 Access from Any Device
+Connect your phone or laptop to the same Wi-Fi as your Raspberry Pi and visit:
+
+cpp
+Copy code
+http://<raspberry-pi-ip>:5000
+
+👦 Creator
+Neel Puntambekar (Age 16)
+
+“BirdSense helps people connect with nature — even if they don’t have time to wait for the birds.”
