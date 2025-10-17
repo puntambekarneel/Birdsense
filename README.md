@@ -33,7 +33,7 @@ That idea became **BirdSense**.
 - Power supply 5 V 2 A  
 
 **Install Dependencies**
-```bash
+
 sudo apt update
 sudo apt install python3-pip python3-opencv python3-picamera ffmpeg -y
 pip3 install flask google-generativeai
@@ -43,8 +43,9 @@ Clone repo
 
 Edit bird_detect.py:
 
-
+``` python
 genai.configure(api_key="YOUR_API_KEY_HERE")
+```
 🧠 How It Works
 The camera keeps watching for movement.
 
@@ -68,8 +69,6 @@ http://<raspberry-pi-ip>:5000
 🌍 Access from Any Device
 Connect your phone or laptop to the same Wi-Fi as your Raspberry Pi and visit:
 
-cpp
-Copy code
 http://<raspberry-pi-ip>:5000
 
 👦 Creator
