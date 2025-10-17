@@ -63,13 +63,13 @@ https://github.com/puntambekarneel/Birdsense.git
 run app.py and bird_detect.py
 
 Open your browser at:
-http://<raspberry-pi-ip>:5000
+```http://<raspberry-pi-ip>:5000```
 
 
 🌍 Access from Any Device
 Connect your phone or laptop to the same Wi-Fi as your Raspberry Pi and visit:
 
-http://<raspberry-pi-ip>:5000
+```http://<raspberry-pi-ip>:5000```
 
 👦 Creator
 Neel Puntambekar (Age 16)
